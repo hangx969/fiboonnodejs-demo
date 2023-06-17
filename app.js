@@ -10,7 +10,7 @@ function fibo(n) {
     return fibo(n - 1) + fibo(n - 2);
 }
 
-app.get('/', function (req, res) {res.write('I am healthy!'); res.end();});
+app.get('/', function (req, res) {res.write('I am healthy~'); res.end();});
 app.get('/fibo/:n', function (req, res){
     var n = parseInt(req.params['n']);
     var f = fibo(n);
